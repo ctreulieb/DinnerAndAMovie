@@ -1,0 +1,10 @@
+Combined buttons to centre map on current location, and to search via the current map location into one button. It doesn't really make sense to give the user the option to just centre the map on their location.
+Added code to automatically adjust the map when opening an infobox to prevent it from sticking off the side of the map.
+Removed if on TryParse for the range. It's a dropdown for the range, not a text box, so invalid input is unlikely.
+Removed "getFactual". Generic factual call is no longer needed.
+Removed "Page_Load". Not used.
+Fixed bug where if you started a new search after completing a previous search, the route would remain on the map.
+Changed Clear Map to remove anything that isn't a infobox from the map, instead of removing all the pins.
+Fixed bug where if you select a theatre, and the restaurant pins are displayed, and then re-click the theatre pin and then click a restaurant pin the theatre pin won't go away. And same for vice versa. 
+Changed layout to not display instructions on mobile site, take up too much screen real estate for small devices.
+Changed range text box to range drop-down to simplify user experience and remove chances of things going wrong, either through invalid input or too small or large of a range. Eg. I had someone try my site and they entered "5km" which is no good.
